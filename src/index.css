@@ -1,0 +1,28 @@
+body {
+  background: #000;
+  color: white;
+}
+
+@import "tailwindcss";
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.category-link {
+
+  transition: color 0.3s ease-in-out, transform 0.2s;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.category-link:hover {
+  color: #ffc107;
+  transform: translateY(-2px);
+
+}
+
+.search-input {
+  border: red;
+  border: 2px;
+}
