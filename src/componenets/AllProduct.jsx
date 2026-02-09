@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import DataContext from '../Context/DataContext'
+import Product from './Product'
+import VideoPlayer from './VideoPlayer'
 
 const AllProduct = () => {
+    const { products } = useContext(DataContext)
+    console.log(products);
+
     return (
-        <div>AllProduct</div>
+        <>
+            <VideoPlayer src={'/1video.mp4'} src2={"17video.mp4"} />
+            <Product items={products} />
+        </>
+
     )
 }
 

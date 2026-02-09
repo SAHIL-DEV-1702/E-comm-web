@@ -16,7 +16,7 @@ const Navbar = () => {
 
                     <form action="" className='flex m-auto'>
                         <input type="search" className='search-input px-3 w-120 text-gray-800 bg-white  rounded-2xl' placeholder='Search Here ' />
-                        <button className='search-btn bg-amber-200 h-9 w-9 flex justify-center items-center rounded-full'><FaMagnifyingGlass className='h-8'></FaMagnifyingGlass></button>
+                        <button className='search-btn bg-amber-200 h-9 w-9 flex justify-center items-center rounded-full text-black'><FaMagnifyingGlass className='h-8'></FaMagnifyingGlass></button>
 
                     </form>
 

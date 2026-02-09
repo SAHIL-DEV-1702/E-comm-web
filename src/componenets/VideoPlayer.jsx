@@ -1,8 +1,14 @@
 import React from 'react'
 
-const VideoPlayer = () => {
+const VideoPlayer = (props) => {
   return (
-    <div>VideoPlayer</div>
+    <>
+      <div className="videoContainer flex flex-wrap ">
+        <video src={props.src2} autoPlay loop muted playsInline className='video-player' />
+
+
+      </div>
+    </>
   )
 }
 
