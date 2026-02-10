@@ -2,15 +2,21 @@ import React, { useContext } from 'react'
 import DataContext from '../Context/DataContext'
 import Product from './Product'
 import VideoPlayer from './VideoPlayer'
+import ShopByCategory from './ShopByCategory'
 
 const AllProduct = () => {
-    const { products } = useContext(DataContext)
-    console.log(products);
+    const { products, Videos } = useContext(DataContext)
+    console.log(products,Videos.url);
 
     return (
         <>
-            <VideoPlayer src={'/1video.mp4'} src2={"17video.mp4"} />
-            <Product items={products} />
+            <div className='videoContainer bg-[#1F1F1F]'>
+                <VideoPlayer src={Videos.url} />
+            </div>
+            <div ><ShopByCategory /></div>
+            <div>
+                <Product items={products} />
+            </div>
         </>
 
     )

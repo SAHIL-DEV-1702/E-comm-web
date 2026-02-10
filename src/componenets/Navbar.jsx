@@ -5,7 +5,7 @@ import { Link } from 'react-router'
 const Navbar = () => {
     return (
         <>
-            <div className='navbar w-full min-h-20 bg-[#201f1f]  px-4 py-2 sticky' >
+            <div className='navbar w-full min-h-20 bg-[#201f1f]  px-4 py-2 ' >
 
                 <div className='w-full h-full flex '>
 

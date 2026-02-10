@@ -1,5 +1,5 @@
 body {
-  background: #000;
+  background: #dbeafe;
   color: white;
 }
 
@@ -25,4 +25,8 @@ body::-webkit-scrollbar {
 .search-input {
   border: red;
   border: 2px;
+}
+
+.videoContainer ::-webkit-scrollbar {
+  display: none;
 }

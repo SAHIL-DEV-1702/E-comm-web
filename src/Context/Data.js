@@ -188,15 +188,15 @@ export const items = [
         description: "Apple Watch SE 2024, ultimate performance for professionals",
         price: "39990",
     },
-    {
-        id: 21,
-        category: "watches",
-        title: "Apple Watch Series - 9",
-        imgSrc: "https://m.media-amazon.com/images/I/71xQgYQZ5FL._AC_UL320_.jpg",
-        amazonLink: "#",
-        description: "Apple Watch SE 2024, ultimate performance for professionals",
-        price: "29990",
-    },
+    // {
+    //     id: 21,
+    //     category: "watches",
+    //     title: "Apple Watch Series - 9",
+    //     imgSrc: "https://m.media-amazon.com/images/I/71xQgYQZ5FL._AC_UL320_.jpg",
+    //     amazonLink: "#",
+    //     description: "Apple Watch SE 2024, ultimate performance for professionals",
+    //     price: "29990",
+    // },
 ];
 
 
