@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaCartShopping } from 'react-icons/fa6'
 import { Link } from 'react-router'
-import ShopByCategory from './ShopByCategory'
+
 
 const Product = ({ items }) => {
 

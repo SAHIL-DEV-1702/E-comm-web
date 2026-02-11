@@ -8,14 +8,15 @@ import { items } from '../Context/Data1'
 
 const ProductByCategory = () => {
   const { id } = useParams()
-
-  const videosCategory = Videos.filter((e) => e.category.toLowerCase === id.toLowerCase)
-  const productsCategory = items.filter((e) => e.category.toLowerCase === id.toLowerCase)
+  const videosCategory = Videos.find((e) => e.category.toLowerCase() === id.toLowerCase())
+  const productsCategory = items.filter((e) => e.category.toLowerCase() === id.toLowerCase())
+  console.log(videosCategory, productsCategory);
 
   return (
     <div>
 
-      <VideoPlayer src={videosCategory.url} />
+      {<VideoPlayer src={videosCategory.url} />}
+
       <Product items={productsCategory} />
 
     </div>

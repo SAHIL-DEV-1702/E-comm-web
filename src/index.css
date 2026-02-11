@@ -27,6 +27,3 @@ body::-webkit-scrollbar {
   border: 2px;
 }
 
-.videoContainer ::-webkit-scrollbar {
-  display: none;
-}
