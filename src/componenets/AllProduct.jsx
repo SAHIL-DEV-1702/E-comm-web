@@ -4,10 +4,11 @@ import Product from './Product'
 import VideoPlayer from './VideoPlayer'
 import ShopByCategory from './ShopByCategory'
 import { Videos } from '../Context/Data1'
+import Cart from '../pages/Cart'
 
 const AllProduct = () => {
-    const { products, Videos } = useContext(DataContext)
-    console.log(products, Videos.url);
+    const { products, Videos, cart  } = useContext(DataContext)
+    console.log("cart product", products, cart);
 
     return (
         <>

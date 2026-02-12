@@ -1,12 +1,19 @@
 import React from 'react'
 import { FaCartShopping } from 'react-icons/fa6'
 import { Link } from 'react-router'
+import { useContext } from 'react'
+import DataContext from '../Context/DataContext'
+import { ToastContainer, Bounce } from 'react-toastify';
 
 
 const Product = ({ items }) => {
 
+  const { addToCart } = useContext(DataContext);
+
   return (
     <>
+      <ToastContainer />
+
       <div className="min-h-screen bg-linear-to-br from-blue-100 to-indigo-100 py-10 ">
 
         <div className="max-w-8xl mx-auto flex justify-center flex-wrap gap-8 px-4 mt-4">
@@ -55,7 +62,12 @@ const Product = ({ items }) => {
                     {/* Add to Cart */}
                     <button
                       className="flex-1 border border-yellow-400 text-yellow-500 font-semibold py-2 rounded-xl active:scale-95 transition"
-                    >
+                      onClick={() =>
+                        addToCart(
+                          e.id,
+                          e.title,
+                          e.price,
+                          e.imgSrc)}>
                       <FaCartShopping className="inline mr-2" /> Add to Cart
                     </button>
 
