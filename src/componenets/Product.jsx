@@ -19,7 +19,7 @@ const Product = ({ items }) => {
             >
               {/* Image Section */}
               <div className="relative">
-                <Link to={`/product/:${e.id}`}>
+                <Link to={`/product/${e.id}`}>
                   <img
                     src={e.imgSrc}
                     alt={e.title}

@@ -24,6 +24,7 @@ function App() {
             <Route path='/product/category/:id' element={<ProductByCategory />} />
             <Route path='/product/search/:term' element={<SearchProduct />} />
           </Routes>
+
           <Slider />
 
         </Router>
