@@ -5,7 +5,7 @@ import AllProduct from './componenets/AllProduct'
 import ProductDetails from './pages/ProductDetails'
 import ProductByCategory from './pages/ProductByCategory'
 import SearchProduct from './pages/SearchProduct'
-import Slider from './componenets/Slider'
+import Slider from './componenets/trendingSlider'
 
 function App() {
 

@@ -4,12 +4,12 @@ import DataContext from '../Context/DataContext'
 import { Link } from 'react-router'
 
 const Cart = () => {
-  const { cart } = useContext(DataContext)
+  const { cart, setCart } = useContext(DataContext)
   console.log(cart);
 
   return (
     <>
-      <div className="min-h-screen bg-gray-100 p-6 border-2">
+      <div className="min-h-auto bg-gray-100 p-6 border-2">
         <h1 className="text-3xl font-bold mb-6 text-center">Shopping Cart</h1>
 
         <div className="max-w-5xl mx-auto bg-white shadow-lg rounded-xl p-6">
@@ -66,7 +66,7 @@ const Cart = () => {
 
           {/* Grand Total */}
           {cart.length > 0 && (
-            <div className="text-right mt-6 text-xl font-bold  bg-blue-500 px-3 py-2">
+            <div className="text-right mt-6 text-xl font-bold  px-3 py-2 ">
               Total: ₹
               {cart.reduce(
                 (total, item) => total + item.price * item.quantity,
@@ -74,6 +74,10 @@ const Cart = () => {
               )}
             </div>
           )}
+        </div>
+        <div className='flex gap-40 justify-center mt-10'>
+          <button className='bg-red-400 px-2 py-3 rounded-2xl active:scale-95'>LogOut</button>
+          <button className='bg-blue-400 px-2 py-3 rounded-2xl active:scale-95' onClick={() => setCart([])}>Clear Cart</button>
         </div>
       </div>
     </>
